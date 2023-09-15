@@ -117,7 +117,7 @@ main {
     }
     
     #menu {
-        display: flex;
+        display: flex;  
     }
 
     #menu > li {
