@@ -214,6 +214,14 @@ main {
     color: #3a3a3a;
 }
 
+/* Media query: large or landscape phones (576px and up)*/
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* Media query for tablet and larger screens (768px and up)*/
 @media screen and (min-width: 768px) {
     /* Header */
@@ -273,13 +281,22 @@ main {
         align-self: flex-end;
     }
 
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
 }
 
 
-/* Media query for screen sizes of 992px and up */
+/* Large devices (screen sizes of 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
     }
 }
 
